@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mancala</string>
+
+    <!--Game configuration-->
+    <string name="NAME_ENTRY_INTRO_TEXT">Please enter names for the players below.</string>
+    <string name="PLAYER1_HINT">Player1</string>
+    <string name="PLAYER2_HINT">Player2</string>
+    <string name="SAVE_BUTTON_TEXT">Save</string>
 </resources>

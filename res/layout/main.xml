@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, MancalaActivity"
-    />
+    android:orientation="vertical">
+
+    <!--Intro text-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NAME_ENTRY_INTRO_TEXT"/>
+
+    <!--Player 1 name entry-->
+    <EditText
+        android:id="@+id/player1_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PLAYER1_HINT"/>
+
+    <!--Player 2 name entry-->
+    <EditText
+        android:id="@+id/player2_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PLAYER2_HINT"/>
+
+    <!--Save button-->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="savePlayerNames"
+        android:text="@string/SAVE_BUTTON_TEXT"/>
 </LinearLayout>
 
