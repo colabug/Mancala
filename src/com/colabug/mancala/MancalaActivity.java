@@ -42,5 +42,8 @@ public class MancalaActivity extends Activity
         Log.d(TAG, "Saving player names");
         player1 = new Player(player1NameEntryBox.getText().toString());
         player2 = new Player(player2NameEntryBox.getText().toString());
+
+        // Start the main game screen
+        startActivity(MancalaBoard.createIntent(MancalaActivity.this));
     }
 }

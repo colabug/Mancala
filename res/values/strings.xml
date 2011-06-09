@@ -7,4 +7,8 @@
     <string name="PLAYER1_HINT">Player1</string>
     <string name="PLAYER2_HINT">Player2</string>
     <string name="SAVE_BUTTON_TEXT">Save</string>
+
+    <!--Game board-->
+    <string name="MANCALA_BOARD_TITLE">Mancala</string>
+    <string name="GAME_WELCOME_TEXT">Welcome!</string>
 </resources>

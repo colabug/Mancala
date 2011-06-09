@@ -17,5 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Game board-->
+        <activity
+            android:name="MancalaBoard"
+            android:label="@string/MANCALA_BOARD_TITLE">
+        </activity>
     </application>
 </manifest>
