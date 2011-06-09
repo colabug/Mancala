@@ -10,5 +10,5 @@
 
     <!--Game board-->
     <string name="MANCALA_BOARD_TITLE">Mancala</string>
-    <string name="GAME_WELCOME_TEXT">Welcome!</string>
+    <string name="GAME_WELCOME_TEXT">Welcome</string>
 </resources>

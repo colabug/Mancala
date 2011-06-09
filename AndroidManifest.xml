@@ -20,7 +20,7 @@
 
         <!--Game board-->
         <activity
-            android:name="MancalaBoard"
+            android:name=".MancalaGame"
             android:label="@string/MANCALA_BOARD_TITLE">
         </activity>
     </application>

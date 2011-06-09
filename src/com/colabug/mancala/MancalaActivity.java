@@ -1,6 +1,7 @@
 package com.colabug.mancala;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,10 +16,6 @@ public class MancalaActivity extends Activity
     // UI
     EditText player1NameEntryBox;
     EditText player2NameEntryBox;
-
-    // Player data
-    private Player player1;
-    private Player player2;
 
     @Override
     public void onCreate (Bundle savedInstanceState)
@@ -39,11 +36,21 @@ public class MancalaActivity extends Activity
     // Saves player names when save button is clicked.
     public void savePlayerNames (View view)
     {
-        Log.d(TAG, "Saving player names");
-        player1 = new Player(player1NameEntryBox.getText().toString());
-        player2 = new Player(player2NameEntryBox.getText().toString());
+        Log.d( TAG, "Saving player names" );
+        Intent intent = createMancalaBoardIntent();
 
-        // Start the main game screen
-        startActivity(MancalaBoard.createIntent(MancalaActivity.this));
+        Log.d( TAG, "Starting game" );
+        startActivity( intent );
+    }
+
+    // Starts main game screen, pass player data
+    private Intent createMancalaBoardIntent()
+    {
+        Intent intent = MancalaGame.createIntent(MancalaActivity.this);
+
+        intent.putExtra( "player1", player1NameEntryBox.getText().toString() );
+        intent.putExtra( "player2", player2NameEntryBox.getText().toString() );
+
+        return intent;
     }
 }

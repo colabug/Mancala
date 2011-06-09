@@ -6,8 +6,8 @@
 
     <!--Intro text-->
     <TextView
+        android:id="@+id/welcome_message"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/GAME_WELCOME_TEXT"/>
+        android:layout_height="wrap_content"/>
 </LinearLayout>
 
