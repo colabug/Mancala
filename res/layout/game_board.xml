@@ -4,9 +4,21 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <!--Intro text-->
+    <!--Welcome message-->
     <TextView
         android:id="@+id/welcome_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Rudimentary view of player1 marbles-->
+    <TextView
+        android:id="@+id/player1_bins"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Rudimentary view of player2 marbles-->
+    <TextView
+        android:id="@+id/player2_bins"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

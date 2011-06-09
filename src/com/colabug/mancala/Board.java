@@ -25,12 +25,35 @@ public class Board {
         player2Bins[0] = player2Bins[NUMBER_BINS - 1] = 0;
     }
 
-    private void makeMove(PlayerType playerType,
-                          int startingBin,
-                          int numberMarbles,
-                          Direction direction)
+    public String getPlayer1Bins ()
     {
-        switch (playerType) {
+        String temp = "";
+        for ( int bin : player1Bins )
+        {
+            temp += bin + " ";
+        }
+
+        return temp;
+    }
+
+    public String getPlayer2Bins ()
+    {
+        String temp = "";
+        for ( int bin : player2Bins )
+        {
+            temp += bin + " ";
+        }
+
+        return temp;
+    }
+
+    private void makeMove (PlayerType playerType,
+                           int startingBin,
+                           int numberMarbles,
+                           Direction direction)
+    {
+        switch ( playerType )
+        {
             case PLAYER1:
                 // TODO: Process a move
                 // Account for wrap around moves
