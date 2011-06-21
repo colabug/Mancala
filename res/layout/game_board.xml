@@ -21,5 +21,18 @@
         android:id="@+id/player2_bins"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:numColumns="8"
+        android:focusableInTouchMode="true"
+        android:verticalSpacing="10dp"
+        android:background="@drawable/bin"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
 </LinearLayout>
 
